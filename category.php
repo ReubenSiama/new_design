@@ -1,8 +1,5 @@
 <?php
-    $server = "localhost";
-    $username = "root";
-    $password = "xC22Y4hmqfkY8HS5F2vae3TTDD9MhH@mysqlDB";
-    $database = "mamahome_mamahome";
+    @require_once("connection.php");
     $text = "";
     $connection = New mySqli($server,$username,$password,$database);
     if($connection->connect_error){
