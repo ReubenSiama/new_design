@@ -5,13 +5,13 @@
     if($connection->connect_error){
         echo($connection->connect_error);
     }else{
-        $statement = "SELECT * FROM `web_contents` WHERE `id` = ".$_GET['id'].";";
+        $statement = "SELECT * FROM `direct_aligned_partners` WHERE `id` = ".$_GET['id'].";";
         $result = $connection->query($statement);
         if($result->num_rows > 0){
             while($row = $result->fetch_assoc()){
-                $title = $row['category_name'];
-                $brands = explode(",",$row['brand_images']);
-                $text .= $row['content'];
+                $title = $row['brand_name'];
+                $image = $row['images'];
+                $text .= $row['description'];
             }
         }
     }
@@ -135,14 +135,7 @@
             <div class="col-md-6 col-md-offset-3">
                 <center>
                     <?php
-                        $statement = "SELECT * FROM `direct_aligned_partners` WHERE `category_id` = ".$_GET['id'].";";
-                        $result = $connection->query($statement);
-                        if($result->num_rows > 0){
-                            while($row = $result->fetch_assoc()){
-                                $link = "<a href='/design/brands.php?id=".$row['id']."'><img class='img img-thumbnail' height='60' width='120' src='images/logos/".$row['images']."'></a>&nbsp;";
-                                echo($link);
-                            }
-                        }
+                        echo("<img src='/design/images/logos/$image' class='img img-src'>");
                     ?>
                 </center>
             </div>
@@ -156,7 +149,7 @@
                         <div class="col-sm-10 col-sm-offset-1">
                             
                             <!-- Post -->
-                            <div class="blog-item mb-80 mb-xs-40">
+                            <div class="blog-item mb-80 mb-xs-40 text-justify blog-item-body">
                                 
                                 <!-- Text -->
                                 <?php

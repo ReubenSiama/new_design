@@ -51,7 +51,6 @@
             if($connection->connect_error){
                 echo($connection->connect_error);
             }else{
-
                 $statement = "SELECT * FROM `web_contents`;";
                 $result = $connection->query($statement);
                 if($result->num_rows > 0){
@@ -134,7 +133,7 @@
                 <div class="full-wrapper relative clearfix">
                     <!-- Logo ( * your text or image into link tag *) -->
                     <div class="nav-logo-wrap local-scroll">
-                        <a href="#top" class="logo">
+                        <a href="/design" class="logo">
                             <img src="images/logo-white.png" alt="" />
                         </a>
                     </div>
@@ -144,19 +143,54 @@
                     <!-- Main Menu -->
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist scroll-nav local-scroll">
-                            <li class="active"><a href="/design"><b>Home</b></a></li>
+                            <li class="active"><a href="#mama_home"><b>Mama Home</b></a></li>
                             <li><a href="#about"><b>Mama Micro Technology</b></a></li>
                             <li><a href="#services"><b>Products</b></a></li>
-                            <!-- <li><a href="#portfolio"><b>Portfolio</b></a></li> -->
                             <li><a href="#news"><b>News</b></a></li>
                             <li><a href="#contact"><b>Contacts</b></a></li>
+                            <li><a href="https://mamahome360.com/webapp/register"><b>Register</b></a></li>
                             
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- End Navigation panel -->
-            
+
+            <!-- About Mama Home Section -->
+            <section class="page-section" id="mama_home">
+                <div class="container relative">
+                    
+                    <h2 class="section-title font-alt align-left mb-70 mb-sm-40">
+                        About Mama Home
+                    </h2>
+                    
+                    <div class="section-text mb-50 mb-sm-20">
+                        <div class="row">
+                        
+                            <div class="col-md-4">
+                                <blockquote>
+                                    <p>
+                                        “Create with the heart; build with the mind.” 
+                                    </p>
+                                    <footer>
+                                        Criss Jami, Killosophy
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            
+                            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                                MAMA Micro Technology Is a Micro Level Process To Fetch The Complete Information Persistently Related To Construction Industry And Process According To The Requirement.
+                            </div>
+                            
+                            <div class="col-md-4 col-sm-6 mb-sm-50 mb-xs-30">
+                                We Are Avoiding All The Middle Agents Between The Manufactures And Consumers , This Will Help Reduce The Overall Cost And Consumers Will Get The Best Price.
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End About Mama Home Section -->
             
             <!-- About Section -->
             <section class="page-section" id="about">
