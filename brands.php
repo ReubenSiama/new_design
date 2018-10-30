@@ -72,7 +72,7 @@
                         <div class="full-wrapper relative clearfix">
                             <!-- Logo ( * your text or image into link tag *) -->
                             <div class="nav-logo-wrap local-scroll">
-                                <a href="/design" class="logo">
+                                <a href="/new_design" class="logo">
                                     <img src="images/logo-white.png" alt="" />
                                 </a>
                             </div>
@@ -82,12 +82,12 @@
                             <!-- Main Menu -->
                             <div class="inner-nav desktop-nav">
                                 <ul class="clearlist scroll-nav local-scroll">
-                                    <li class="active"><a href="/design">Home</a></li>
-                                    <li><a href="/design#about">Mama Micro Technology</a></li>
-                                    <li><a href="/design#services">Products</a></li>
-                                    <!-- <li><a href="/design#portfolio">Portfolio</a></li> -->
-                                    <li><a href="/design#news">News</a></li>
-                                    <li><a href="/design#contact">Contacts</a></li>
+                                    <li class="active"><a href="/new_design">Home</a></li>
+                                    <li><a href="/new_design#about">Mama Micro Technology</a></li>
+                                    <li><a href="/new_design#services">Products</a></li>
+                                    <!-- <li><a href="/new_design#portfolio">Portfolio</a></li> -->
+                                    <li><a href="/new_design#news">News</a></li>
+                                    <li><a href="/new_design#contact">Contacts</a></li>
                                     
                                 </ul>
                             </div>
@@ -118,7 +118,7 @@
                         
                         <div class="col-md-4 mt-30">
                             <div class="mod-breadcrumbs font-alt align-right">
-                                <a href="/design">Home</a>&nbsp;/&nbsp;<span>
+                                <a href="/new_design">Home</a>&nbsp;/&nbsp;<span>
                                     <?php echo($title); ?>
                                 </span>
                             </div>
@@ -135,7 +135,7 @@
             <div class="col-md-6 col-md-offset-3">
                 <center>
                     <?php
-                        echo("<img src='/design/images/logos/$image' class='img img-src'>");
+                        echo("<img src='/new_design/images/logos/$image' class='img img-src'>");
                     ?>
                 </center>
             </div>
